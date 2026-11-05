@@ -1,4 +1,4 @@
 interface:
   display_name: "Pisz książkę"
-  short_description: "Serie, styl autora, immersja i ciągłość powieści"
-  default_prompt: "Użyj $pisz-ksiazke: sprawdź źródła, architekturę serii i profil stylu, a potem wykonaj zamówioną pracę z kontrolą ciągłości i immersji."
+  short_description: "Serie, styl autora, praca modułowa, ciągłość; komendy pisz/write, dalej/next, audyt/audit"
+  default_prompt: "Użyj $pisz-ksiazke stan"

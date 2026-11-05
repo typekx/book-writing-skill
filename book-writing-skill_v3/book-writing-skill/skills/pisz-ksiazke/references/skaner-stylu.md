@@ -2,13 +2,15 @@
 
 Opcjonalny skrypt wymaga Node.js 20 lub nowszego, bez dodatkowych bibliotek. Instrukcje literackie i szablony działają także bez Node.js. Narzędzie czyta wskazane pliki UTF-8 i wypisuje JSON; nigdy nie poprawia rękopisu i nie wykonuje połączeń sieciowych.
 
-Uruchom z katalogu skilla, podając rzeczywiste ścieżki do prozy:
+Najkrócej: `node scripts/ks.mjs styl rozdzial.md` (lub `style`). Pełna forma, z katalogu skilla:
 
 ```sh
 node scripts/audyt-stylu.mjs /sciezka/rozdzial.md
 node scripts/audyt-stylu.mjs /sciezka/rozdzial_1.md /sciezka/rozdzial_2.md
 node --test scripts/test-audyt-stylu.mjs
 ```
+
+Reguły konkretnego projektu (limity tików, typografię, dni tygodnia, wycofane nazwy, porównanie z poprzednią wersją) sprawdza osobny skrypt opisany w [kontroli technicznej](kontrola-techniczna.md).
 
 Raport można zapisać dostępnym narzędziem do pliku w katalogu kontroli. Nie przekierowuj wyjścia do pliku wejściowego. Nie podawaj jednocześnie całości tomu i jej osobnych jednostek; sztucznie zwielokrotni to powtórzenia. Ten sam fizyczny adres pliku podany dwa razy jest odrzucany.
 

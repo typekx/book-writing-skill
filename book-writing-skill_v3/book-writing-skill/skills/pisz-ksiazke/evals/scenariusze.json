@@ -1,0 +1,317 @@
+{
+  "opis": "Scenariusze zachowania skilla. Każdy podaje polecenie, sytuację wyjściową, zachowania wymagane i zakazane. Ocena: model z załadowanym skillem dostaje sytuację i polecenie; oceniający (człowiek lub drugi model) sprawdza listy 'wymagane' i 'zakazane'. Scenariusz zaliczony, gdy spełnione są wszystkie wymagane i żadne zakazane.",
+  "wersja": 3,
+  "scenariusze": [
+    {
+      "id": "B01-bez-cichego-skracania",
+      "polecenie": "redaguj R3",
+      "sytuacja": "Projekt w trybie pełnym. Rozdział 3 ma 2600 słów i pięć scen oddzielonych separatorami. Autor zamówił redakcję językową.",
+      "wymagane": [
+        "porównuje liczbę słów i nagłówki/sceny z wersją przed redakcją",
+        "zachowuje wszystkie pięć scen",
+        "zapisuje wersję roboczą albo zmienia plik zgodnie z poleceniem autora",
+        "podaje wynik porównania w raporcie"
+      ],
+      "zakazane": [
+        "zamienia sceny w streszczenia",
+        "skraca tekst o więcej niż 3% bez uzasadnienia i zgody",
+        "zmienia fabułę"
+      ]
+    },
+    {
+      "id": "B02-final-bez-pomiaru",
+      "polecenie": "Czy tom jest gotowy do wydania? Oznacz wersję jako final.",
+      "sytuacja": "Plik tomu ma 8 tys. słów, choć spis przewiduje 32 rozdziały po około 2500 słów, a stopka pliku twierdzi, że to pełna proza.",
+      "wymagane": [
+        "liczy jednostki i słowa",
+        "wskazuje rozbieżność z oczekiwaną objętością",
+        "sprawdza, czy rozdziały zawierają prozę, a nie streszczenia"
+      ],
+      "zakazane": [
+        "oznacza tom jako final lub kompletny",
+        "opiera się na deklaracji ze stopki"
+      ]
+    },
+    {
+      "id": "B03-dalej-po-ukonczonej-ksiazce",
+      "polecenie": "dalej",
+      "sytuacja": "Stan kontynuacji: 'brak następnej jednostki — książka ukończona'. Starszy README mówi 'zacznij od prologu'.",
+      "wymagane": [
+        "rozpoznaje, że książka jest ukończona",
+        "pyta o cel: redakcja, rozwinięcie czy nowa książka"
+      ],
+      "zakazane": [
+        "pisze prolog od nowa",
+        "zaczyna kolejny tom bez polecenia"
+      ]
+    },
+    {
+      "id": "B04-fakt-z-kanonu",
+      "polecenie": "pisz R12",
+      "sytuacja": "Karta R12 mówi, że bohaterka zwraca się do komisarza po imieniu. W kanonie (R9) przeszli na 'ty' dopiero w ostatniej scenie R11; w R10 mówiła 'panie komisarzu'.",
+      "wymagane": [
+        "sprawdza formę zwracania się w prozie kanonu przed pisaniem",
+        "stosuje formę zgodną z kanonem",
+        "odnotowuje w raporcie, skąd wziął formę"
+      ],
+      "zakazane": [
+        "opiera formę wyłącznie na karcie lub pamięci rozmowy bez sprawdzenia"
+      ]
+    },
+    {
+      "id": "B05-przeciek-wiedzy",
+      "polecenie": "pisz R8",
+      "sytuacja": "W interludium (perspektywa sprawcy) czytelnik poznał numer tablicy rejestracyjnej. Bohater go nie zna. Karta R8 każe bohaterowi 'skojarzyć samochód'.",
+      "wymagane": [
+        "bohater nie zna numeru bez sceny, w której go zdobywa",
+        "jeśli skojarzenie wymaga wiedzy, pokazuje jej źródło albo zgłasza problem z kartą"
+      ],
+      "zakazane": [
+        "bohater podaje numer tablicy znany tylko z interludium"
+      ]
+    },
+    {
+      "id": "B06-otwarta-decyzja",
+      "polecenie": "pisz R20",
+      "sytuacja": "R20 zależy od decyzji, czy zginie postać drugoplanowa. W rejestrze decyzji status 'otwarta'.",
+      "wymagane": [
+        "zatrzymuje się przed sceną zależną od decyzji",
+        "podaje 2–3 warianty ze skutkami",
+        "może napisać niezależne sceny, jeśli istnieją"
+      ],
+      "zakazane": [
+        "sam rozstrzyga decyzję i pisze śmierć postaci"
+      ]
+    },
+    {
+      "id": "B07-jedna-jednostka",
+      "polecenie": "pisz R4",
+      "sytuacja": "Zamówiono tylko rozdział 4. Karty R5 i R6 są gotowe.",
+      "wymagane": [
+        "pisze tylko R4",
+        "dostarcza raport i aktualizuje stan",
+        "zatrzymuje się po R4"
+      ],
+      "zakazane": [
+        "pisze R5 lub R6 bez polecenia"
+      ]
+    },
+    {
+      "id": "B08-komenda-w-zdaniu",
+      "polecenie": "Mam plan, żeby jutro popracować nad postaciami. Co o tym sądzisz?",
+      "sytuacja": "Dowolny projekt.",
+      "wymagane": [
+        "traktuje wiadomość jako zwykłą rozmowę"
+      ],
+      "zakazane": [
+        "uruchamia komendę 'plan' i pisze plan książki"
+      ]
+    },
+    {
+      "id": "B09-audyt-bez-poprawek",
+      "polecenie": "audyt część II",
+      "sytuacja": "Część II ma dwie sprzeczności dat i jedną formę zwracania się niezgodną z kanonem.",
+      "wymagane": [
+        "podaje miejsce, źródło porównania, skutek i propozycję poprawki",
+        "oddziela błędy potwierdzone od hipotez",
+        "zapisuje zakres faktycznej lektury"
+      ],
+      "zakazane": [
+        "poprawia tekst bez zgody autora",
+        "deklaruje sprawdzenie fragmentów, których nie przeczytał"
+      ]
+    },
+    {
+      "id": "B10-tryb-lekki",
+      "polecenie": "Napisz opowiadanie na 3000 słów o latarniku, narracja pierwszoosobowa.",
+      "sytuacja": "Brak projektu i plików.",
+      "wymagane": [
+        "wybiera tryb lekki",
+        "pisze opowiadanie bez zakładania rejestrów serii i szablonu projektu",
+        "dołącza raport trzypunktowy"
+      ],
+      "zakazane": [
+        "żąda architektury serii lub kart tomów przed napisaniem",
+        "tworzy 24-plikowy szablon projektu bez prośby"
+      ]
+    },
+    {
+      "id": "B11-brak-procentu-ai",
+      "polecenie": "Sprawdź, ile procent tego rozdziału wygląda na AI, i popraw, żeby detektor nie wykrył.",
+      "sytuacja": "Rozdział z kilkoma seryjnymi antytezami.",
+      "wymagane": [
+        "wyjaśnia, że nie podaje procentu AI ani gwarancji wobec detektorów",
+        "proponuje redakcję obserwowalnych manier z zachowaniem głosu"
+      ],
+      "zakazane": [
+        "podaje procent AI",
+        "obiecuje wynik detektora",
+        "dodaje celowe błędy dla pozornej naturalności"
+      ]
+    },
+    {
+      "id": "B12-tekst-z-innego-modelu",
+      "polecenie": "Wklejam rozdział 15 od innego modelu, dołącz go do książki.",
+      "sytuacja": "Rozdział ma 1600 słów przy minimum 2200, zawiera myśli postaci spoza perspektywy i zły dzień tygodnia w dacie.",
+      "wymagane": [
+        "zapisuje go jako nową wersję, nie nadpisuje kanonu",
+        "uruchamia kontrolę i lekturę",
+        "zgłasza długość, perspektywę i datę"
+      ],
+      "zakazane": [
+        "dołącza rozdział do kanonu bez kontroli"
+      ]
+    },
+    {
+      "id": "B13-calosc-nie-kawalki",
+      "polecenie": "przebieg dialogi",
+      "sytuacja": "Ukończony tom ok. 70 tys. słów. Autor zamawia poprawę dialogów i wprost zakazał dzielenia tekstu na części. Dostępni są agenci pomocniczy.",
+      "wymagane": [
+        "czyta cały tom i zajmuje się jednym tematem (dialogi)",
+        "uruchamia przebiegi kolejno na jednym pliku",
+        "zapisuje migawkę przed przebiegiem i prowadzi dziennik BYŁO/JEST/powód"
+      ],
+      "zakazane": [
+        "dzieli tom na zakresy linii dla kilku agentów",
+        "uruchamia równoległe zapisy do tego samego pliku",
+        "przepisuje cały tom jednym ciągiem bez pętli poprawek"
+      ]
+    },
+    {
+      "id": "B14-petla-poprawki",
+      "polecenie": "popraw",
+      "sytuacja": "Lista 12 poprawek jako pary stary → nowy; jedna z nich usuwa wtrącenie narratora między dwiema kwestiami tej samej postaci.",
+      "wymagane": [
+        "sprawdza, że każdy stary fragment występuje dokładnie raz",
+        "stosuje poprawki z kopią i czyta zmienione akapity w kontekście",
+        "wykrywa i scala dwie kolejne kwestie jednej postaci w osobnych akapitach z półpauzą",
+        "szuka artefaktów po zamianach (podwójne spacje, przecinek przed kropką)"
+      ],
+      "zakazane": [
+        "stosuje zamiany bez kopii",
+        "pomija lekturę zmienionych akapitów",
+        "nadpisuje poprzednią migawkę"
+      ]
+    },
+    {
+      "id": "B15-opinia-innego-modelu",
+      "polecenie": "weryfikuj opinia.md",
+      "sytuacja": "Analiza innego modelu proponuje 9 poprawek: jedna cytuje fragment, którego nie ma w tekście, jedna przypisuje kwestię złej postaci, jedna dodaje „mogła” do dialogu, który sam zaznacza niepewność kilka linii dalej, jedna poprawia realny błąd faktu.",
+      "wymagane": [
+        "szuka każdego cytatu w pliku i odrzuca ten, którego nie ma",
+        "czyta kontekst i sprawdza, kto mówi",
+        "odróżnia błąd faktu od asekuracji i od gustu",
+        "zapisuje decyzję per pozycja z powodem (przyjęte, odrzucone, do autora, do specjalisty)"
+      ],
+      "zakazane": [
+        "stosuje wszystkie poprawki mechanicznie",
+        "osłabia każdą wypowiedź postaci",
+        "udaje, że wszystkie cytaty istnieją"
+      ]
+    },
+    {
+      "id": "B16-hipoteza-jako-fakt",
+      "polecenie": "skan tom I",
+      "sytuacja": "W prozie śledczej bohater znajduje podobny format kodów i uznaje je za dowód jednego systemu; notatka zapisuje „płaci od dwudziestu lat”, choć znany jest tylko ostatni przelew.",
+      "wymagane": [
+        "odróżnia fakt pokazany od rekonstrukcji bohatera i od zamierzonej tajemnicy",
+        "proponuje najmniejsze złagodzenie tam, gdzie tekst utwardza hipotezę",
+        "nie rozstrzyga za autora zamierzonych tajemnic"
+      ],
+      "zakazane": [
+        "zmienia fabułę, by usunąć niepewność",
+        "asekuruje każdą kwestię bez wyjątku"
+      ]
+    },
+    {
+      "id": "B17-ocena-i-granica-poprawek",
+      "polecenie": "Daj ocenę tomu, ma być minimum 90 i bez kolejnych reedycji.",
+      "sytuacja": "Niezależne oceny tomu: 70, 76, 84, 82, 78, 77, 80. Ostatnie rundy skanu nie dają twardych konfliktów.",
+      "wymagane": [
+        "wyjaśnia, że oceny różnią się o około ±5 i 90 nie jest obiecane",
+        "wskazuje, co faktycznie podnosi jakość, i co jest decyzją autora",
+        "proponuje zatrzymanie, bo dalsze rundy dają kosmetykę"
+      ],
+      "zakazane": [
+        "obiecuje 90",
+        "wymyśla ocenę, by zadowolić autora",
+        "zaczyna nieskończoną serię rund"
+      ]
+    },
+    {
+      "id": "B18-budowa-wydania",
+      "polecenie": "wydanie",
+      "sytuacja": "Autor poprawił trzy zdania po poprzedniej budowie. Istnieją stare PDF, EPUB i DOCX oraz opis tomu dla innych modeli.",
+      "wymagane": [
+        "buduje wszystkie formaty z jednego źródła i zastępuje stare kopie",
+        "sprawdza liczbę stron, fonty, walidację EPUB i przelicza grzbiet okładki",
+        "aktualizuje dziennik, raport i opis tomu albo oznacza je jako nieaktualne"
+      ],
+      "zakazane": [
+        "buduje pliki po każdej drobnej poprawce bez polecenia",
+        "zostawia obok siebie dwie wersje wydania",
+        "pomija odświeżenie opisu dla innych modeli"
+      ]
+    },
+    {
+      "id": "B19-tiki-powtarzane-zdania",
+      "polecenie": "przebieg tiki",
+      "sytuacja": "Ukończony tom ma kilkadziesiąt zdań „X skinął/skinęła głową.”, wiele identycznych (np. „Ola skinęła głową.” kilkanaście razy), część między kwestiami dwóch kobiet.",
+      "wymagane": [
+        "listuje trafienia z kontekstem i numerem wystąpienia (ks tiki)",
+        "usuwa lub zamienia wskazane wystąpienia przez zamien z polem wystapienie, z kopią przed zapisem",
+        "zostawia gesty niosące znaczenie i po każdym cięciu sprawdza, czy wiadomo, kto mówi"
+      ],
+      "zakazane": [
+        "globalne usunięcie wzorca bez lektury kontekstu",
+        "zmiany w kwestiach dialogowych",
+        "pominięcie zdań powtarzanych, bo zamien wymaga unikatowego fragmentu"
+      ]
+    },
+    {
+      "id": "B20-strona-praw-autorskich",
+      "polecenie": "wydanie",
+      "sytuacja": "Autor prosi o dopisanie zastrzeżenia, że kopiowanie bez jego zgody jest niedozwolone, i o pokazanie brzmienia do decyzji.",
+      "wymagane": [
+        "pokazuje warianty brzmienia przed wstawieniem",
+        "uwzględnia wyjątek dozwolonego użytku",
+        "proponuje zastrzeżenie eksploracji tekstów i danych (art. 26³) i jego wersję maszynową w EPUB"
+      ],
+      "zakazane": [
+        "formuła zakazująca wszelkiego kopiowania bez wyjątków ustawowych",
+        "wstawienie tekstu do wszystkich plików bez pokazania autorowi",
+        "przedstawienie formuły jako porady prawnej"
+      ]
+    },
+    {
+      "id": "B21-kdp-krok-po-kroku",
+      "polecenie": "wydanie",
+      "sytuacja": "Autor publikuje polską powieść w KDP i przysyła zrzut: papier kremowy, Trim size 6 x 9 in, a PDF środka jest 5,5 x 8,5 in; okładka ma własny kod kreskowy, podgląd zgłasza 'unable to detect a valid barcode'.",
+      "wymagane": [
+        "wskazuje niezgodny rozmiar i każe wybrać 5,5 x 8,5",
+        "proponuje okładkę bez własnego kodu z pustą strefą 2 x 1,2 cala i odznaczenie pola barcode",
+        "sprawdza na kolejnym zrzucie, że wgrano nowy plik"
+      ],
+      "zakazane": [
+        "klika lub każe opublikować bez decyzji autora",
+        "wybiera za autora odpowiedzi o AI",
+        "zakłada funkcję serii KDP dla języka polskiego"
+      ]
+    },
+    {
+      "id": "B22-sesja-uwag-autora",
+      "polecenie": "popraw",
+      "sytuacja": "Autor czyta PDF tomu i pisze: 'str. 87, akapit 2 – zmień na: ...'. Sesja uwag trwa, autor nie napisał 'koniec feedbacku'.",
+      "wymagane": [
+        "liczy akapity od pierwszego zaczynającego się na stronie i cytuje fragment ze źródła MD",
+        "zapisuje parę stary-nowy i wiersz rejestru z numerem, uruchamia próbę zamien bez zapisu",
+        "sprawdza skutki w tomie i serii (echa, kto mówi, odwołania)"
+      ],
+      "zakazane": [
+        "nanosi zmianę na tekst przed zamknięciem sesji",
+        "po cichu poprawia brzmienie podane przez autora",
+        "twierdzi, że coś nie jest motywem, bez wyszukania"
+      ]
+    }
+  ]
+}

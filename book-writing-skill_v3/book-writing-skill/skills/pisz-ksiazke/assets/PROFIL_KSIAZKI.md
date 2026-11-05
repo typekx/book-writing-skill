@@ -9,6 +9,7 @@ Szablon do uzupełnienia faktami z polecenia i materiałów autora. Nieuzgodnion
 - Język, ton i obietnica dla czytelnika:
 - Narracja, perspektywa i czas:
 - Aktualny etap: plan / szkic / redakcja / ukończone wydanie.
+- Tryb pracy: lekki / pełny (i powód):
 - Zakres obecnego zlecenia:
 
 ## Źródła i decyzje
@@ -21,14 +22,20 @@ Szablon do uzupełnienia faktami z polecenia i materiałów autora. Nieuzgodnion
 | Decyzje autora | | |
 | Biblia i rejestry | | |
 | Raporty | | |
+| Wersje wycofane (nie używać) | | |
+
+Hierarchia źródeł (wyższe wygrywa): 1. … 2. … 3. … Plan i karty stoją niżej niż napisana proza.
 
 ## Wykonanie
 
 - Zamówiona jednostka lub zakres:
 - Reguła zatrzymania:
-- Długości i metoda liczenia:
+- Długości i metoda liczenia (ten sam licznik dla całej serii):
+- Plik reguł kontroli technicznej i limity stylu na jednostkę:
 - Wymagania typograficzne i stylistyczne:
-- Granice treści i ujawnień:
+- Granice treści i ujawnień, zakazane zestawienia wątków:
+- Postaci, które nigdy nie są perspektywą:
+- Nazwy i informacje, które jeszcze nie padają:
 - Dopuszczalny zakres zmian kanonu:
 - Miejsce zapisu prozy, raportów i stanu:
 - Formaty wydań wymagające synchronizacji:

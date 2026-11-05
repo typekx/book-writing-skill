@@ -1,86 +1,98 @@
 ---
 name: pisz-ksiazke
-description: "Projektuj książki i wielotomowe serie, analizuj i zachowuj styl autora, pisz oraz redaguj prozę z kontrolą kanonu, immersji i schematycznych manier językowych. Używaj także przy biblii serii, researchu, audycie rękopisu i organizacji projektu; sam eksport plików nie wymaga całego procesu."
+description: "Projektuj książki i wielotomowe serie, analizuj i zachowuj styl autora, pisz oraz redaguj prozę modułami z kontrolą kanonu, wiedzy postaci, immersji i schematycznych manier. Używaj także przy biblii serii, kartach rozdziałów, przekazaniu pracy innemu modelowi, nazwach własnych, researchu, audycie i redakcji ukończonego tomu (przebiegi tematyczne na całości, skan spójności, weryfikacja opinii innych modeli), organizacji projektu i wydaniu. Rozpoznaje jednowyrazowe komendy po polsku i angielsku (pisz/write, dalej/next, audyt/audit, sprawdź/check…). Ma tryb lekki dla opowiadań i krótkich form."
 metadata:
-  version: "3.0.0"
+  version: "3.6.0"
 ---
 
-# Pisz książkę — wersja 3
+# Pisz książkę
 
-Pracuj na aktualnym rękopisie, w zakresie zamówionym przez autora. Dobieraj warsztat do książki: konwencja, narracja, długość i typografia konkretnego projektu nie są uniwersalnymi wymaganiami skilla.
+Pracuj na aktualnym rękopisie, w zakresie zamówionym przez autora. Konwencja, narracja, długość i typografia należą do projektu, nie do skilla. Ukończenie szkicu, audytu, redakcji i wydania to odrębne stany; zgodność oznacza kontrolowane zależności i jawne ograniczenia, nie obietnicę bezbłędności.
 
-Dążenie do maksymalnej zgodności oznacza kontrolowane zależności i jawne ograniczenia, a nie obietnicę bezbłędności. Ukończenie szkicu, audytu, redakcji i wydania to odrębne stany.
+## Komendy
 
-## Dobierz moduły do zadania
+Pierwsze słowo wiadomości może być komendą (PL lub EN, polskie znaki opcjonalne), z opcjonalnym zakresem: `pisz R5`, `audit część II`. W środku zdania to słowo nie jest komendą; komenda nie poszerza zakresu. Lista: `pomoc/help`, `stan/status`, `źródła/sources`, `seria/series`, `plan`, `karty/cards`, `pisz/write`, `dalej/next`, `popraw/fix`, `redaguj/edit`, `korekta/proof`, `przebieg/pass`, `skan/scan`, `weryfikuj/verify`, `styl/style`, `immersja/immersion`, `sprawdź/check`, `audyt/audit`, `porównaj/diff`, `wpływ/impact`, `nazwy/names`, `decyzje/decisions`, `przekaż/handoff`, `wydanie/export`, `projekt/setup`, `lekki/light`, `pełny/full`. Znaczenie i zakres każdej: [komendy](references/komendy.md).
+
+## Bezpieczniki
+
+Obowiązują zawsze, także w trybie lekkim.
+
+1. **Nie skracaj rękopisu po cichu.** Przy zmianie istniejącej jednostki porównaj liczbę słów i nagłówki z poprzednią wersją; spadek powyżej progu (domyślnie 3%) bez zamówionych cięć to błąd. Nie przepisuj całego tomu w jednej odpowiedzi.
+2. **Nie deklaruj ukończenia bez pomiaru.** „Final” dopiero po policzeniu jednostek i słów i sprawdzeniu, że plik zawiera prozę, a nie szablon lub streszczenie.
+3. **Fakty z przeszłości sprawdzaj w prozie kanonu, wyszukiwaniem, przed napisaniem zdania.** Pamięć rozmowy, streszczenie i plan nie są źródłem.
+4. **Wiedza czytelnika nie jest wiedzą postaci** bez sceny, w której postać ją zdobywa.
+5. **Planuj długość z zapasem** (około 110% celu); braki uzupełniaj beatami, nie wodą.
+6. **Usunięty tik wraca w przebraniu;** po redakcji policz też zamienniki. Tiki przerzedzaj z kontekstem (`ks tiki`), nigdy w dialogu; po cięciu sprawdź, kto mówi; w serii wyrównuj gęstość (`ks gestosc`).
+7. **Decyzja autora ma jedno źródło.** Otwartej decyzji fabularnej nie rozstrzygasz sam: zatrzymaj zależną scenę i podaj 2–3 warianty ze skutkami.
+8. **Proza jest czysta:** bez komentarzy, znaczników, ukrytych znaków i metadanych; raport i stan to osobne pliki.
+9. **Redakcję gotowego tomu prowadź na całości, nie na kawałkach:** jeden przebieg = cały tom + jeden temat, po kolei na jednym pliku. Zakres linii, „część dla agenta” i równoległe zapisy do tego samego pliku są błędem ([redakcja całości](references/redakcja-calosci.md)).
+10. **Poprawka to pętla:** para „stary → nowy” (stary dokładnie raz), zastosowanie, lektura w kontekście, dopiero potem następna; migawka przed przebiegiem, dziennik zmian, stan zapisany do wznowienia po przerwie. Po scaleniach sprawdź zapis dialogu i artefakty (podwójne spacje, przecinki, cudzysłowy).
+11. **Hipoteza bohatera nie jest faktem:** oznaczaj T (pokazane), M (rekonstrukcja), ? (nierozstrzygnięte); realia prawne i finansowe sprawdź u źródła, spory oznacz „do specjalisty” ([weryfikacja opinii](references/weryfikacja-opinii.md)).
+12. **Opinię innego modelu sprawdzaj w tekście** (cytat istnieje? kontekst? kto mówi?), nie stosuj na ślepo; ocena 0–100 waha się o ±5, nie obiecuj wyniku, zatrzymaj się po rundach bez twardych konfliktów.
+13. **Pliki wydania buduj na polecenie i z jednego źródła;** pracuj na MD, po zmianie tekstu odśwież opis i dziennik albo oznacz je jako nieaktualne. Brzmienie strony praw autorskich (dozwolony użytek, zastrzeżenie TDM) pokaż autorowi do decyzji. Publikację, ujawnienie AI i cenę wybiera autor.
+
+## Tryb pracy: lekki albo pełny
+
+Dobierz tryb do projektu i zapisz go w profilu.
+
+- **Lekki** (`lekki`): opowiadanie, krótka forma, pojedyncza książka bez serii, próbka, szybka redakcja. Bez architektury serii, rejestrów i kart tomów; karta jednostki skrócona, raport trzypunktowy, stan opcjonalny. Szczegóły: [tryb lekki](references/tryb-lekki.md).
+- **Pełny** (`pełny`): powieść pisana modułami, seria, przekazywanie pracy między modelami, praca z wieloma wersjami. Cały proces opisany niżej.
+
+Domyślnie: lekki dla tekstów do około 20 tys. słów i pojedynczych zleceń redakcyjnych, pełny dla serii i projektów z istniejącym stanem kontynuacji. Przejdź na pełny, gdy pojawią się kolejne tomy, przekazanie lub poważne sprzeczności.
+
+## Moduły
 
 | Zadanie | Instrukcja |
 |---|---|
-| Seria od początku, nowy tom, zmiana finału | [Projektowanie serii](references/projektowanie-serii.md) |
-| Rozpoznanie i zachowanie głosu | [Analiza stylu](references/analiza-i-zachowanie-stylu.md) |
-| Kontrola zanurzenia czytelnika w scenie | [Immersja](references/immersja.md) |
-| Wyliczenia, powtarzana refleksja, mechaniczne puenty | [Redakcja schematycznej prozy](references/redakcja-schematycznej-prozy.md) |
-| Zależności między tomami i wpływ poprawek | [Walidacja serii](references/walidacja-serii.md) |
+| Seria, nowy tom, zmiana finału | [Projektowanie serii](references/projektowanie-serii.md) |
+| Pisanie modułami, karty, akceptacja, pętla części | [Praca modułowa](references/praca-modulowa.md) |
+| Głos autora | [Analiza stylu](references/analiza-i-zachowanie-stylu.md) |
+| Zanurzenie czytelnika | [Immersja](references/immersja.md) |
+| Wyliczenia, antytezy, tiki, puenty | [Redakcja schematycznej prozy](references/redakcja-schematycznej-prozy.md) |
+| Audyt i redakcja ukończonego tomu: przebiegi tematyczne | [Redakcja całości](references/redakcja-calosci.md) |
+| Sprzeczności czasu, przedmiotów, wiedzy, realiów po poprawkach | [Skan spójności](references/skan-spojnosci.md) |
+| Analiza od innego modelu, hipoteza czy fakt, realia prawne | [Weryfikacja opinii](references/weryfikacja-opinii.md) |
+| Uwagi autora do stron PDF, jego wersja | [Sesja uwag autora](references/sesja-uwag-autora.md) |
+| Zależności między tomami, wpływ poprawek | [Walidacja serii](references/walidacja-serii.md) |
+| Wiele wersji, przejęcie projektu, stan postaci | [Źródła i ciągłość](references/zrodla-i-ciaglosc.md) |
+| Scena, perspektywa, granice treści, kontrola jednostki | [Warsztat i kontrola](references/warsztat-i-kontrola.md) |
+| Nazwy własne i kolizje | [Nazwy i kolizje](references/nazwy-i-kolizje.md) |
+| Praca w innym modelu lub aplikacji | [Przekazanie między modelami](references/przekazanie-miedzy-modelami.md) |
+| Liczniki, daty, typografia, porównanie wersji | [Kontrola techniczna](references/kontrola-techniczna.md) |
+| Organizacja folderów książki | [Repozytorium książki](references/repozytorium-ksiazki.md) |
+| Skład, okładka, wydanie | [Wydanie i skład](references/wydanie-i-sklad.md) |
+| Publikacja w KDP | [Publikacja KDP](references/publikacja-kdp.md) |
 
-Czytaj moduły potrzebne zadaniu; drobna korekta nie wymaga ponownej lektury całej biblioteki.
+Czytaj tylko moduły potrzebne zadaniu.
 
-## Ustal zadanie i punkt startowy
+## Start
 
-Rozpoznaj tryb: planowanie nowej książki, pisanie jednostki, poprawka, redakcja albo audyt. Polecenie analizy nie zamawia nowej prozy. Poprawka bieżącego rozdziału nie oznacza przejścia do następnego.
+Rozpoznaj tryb zadania: planowanie, pisanie jednostki, poprawka, redakcja, audyt, przekazanie. Analiza nie zamawia prozy; poprawka bieżącego rozdziału nie oznacza przejścia do następnego. Jeśli rękopis jest ukończony, `dalej` nie zaczyna go od nowa ani nie zamawia kolejnego tomu; zapytaj o cel.
 
-Przeczytaj instrukcje projektu, profil książki, aktualny stan i mapę źródeł. Przy wielu wersjach lub pakiecie przekazania użyj [wyboru źródeł](references/zrodla-i-ciaglosc.md). Nazwy FINAL, KOMPLET, START, wyższy numer wersji i data skopiowania nie wystarczają do wyboru tekstu.
+Przeczytaj instrukcje projektu, [profil](assets/PROFIL_KSIAZKI.md), stan i mapę źródeł. Przy wielu wersjach wybierz tekst według [źródeł i ciągłości](references/zrodla-i-ciaglosc.md); nazwa FINAL lub data nie wystarczy, sprawdź objętość i treść. Zapisz hierarchię źródeł: kanon (proza) wygrywa z rejestrami, a te z planem; sprzeczność karty z kanonem trafia do raportu. Brakującego kanonu nie zastępuj wymyśloną przeszłością.
 
-Jeżeli rękopis jest ukończony, „dalej” nie uruchamia go ponownie ani nie zamawia kolejnego tomu. Ustal, czy autor chce redakcję, rozwinięcie czy nową książkę. Brak kluczowego fragmentu kanonu oznacza potrzebę jego uzyskania, a nie zastąpienia wymyśloną przeszłością.
+Nowy projekt: ustal tylko rodzaj książki, odbiorcę, obietnicę, perspektywę, język, granice treści i zakres; resztę zaproponuj jako oznaczone założenia.
 
-Dla nowego projektu ustal tylko informacje potrzebne do rozpoczęcia: rodzaj książki, odbiorcę, obietnicę dla czytelnika, perspektywę, język, granice treści i zamówiony zakres. Możesz zaproponować oznaczone założenia tam, gdzie autor pozostawił swobodę. [Profil projektu](assets/PROFIL_KSIAZKI.md) jest szablonem, nie obowiązkowym formularzem przed napisaniem próbki.
+## Pisanie
 
-Przy zakładaniu lub porządkowaniu warsztatu książki przeczytaj [organizację repozytorium](references/repozytorium-ksiazki.md). Dostępny jest [szablon projektu](assets/szablon-projektu/README.md) z zasadami, kartami postaci, relacjami, chronologią, lokacjami i researchem. Stosuj go na żądanie organizacji projektu; zachowaj istniejącą strukturę przy zwykłym pisaniu lub poprawce. Repozytorium skilla przechowuje instrukcje, a repozytorium książki — materiały autora.
+Przed pisaniem lub większą redakcją oprzyj się na [profilu stylu](assets/szablon-projektu/01_Zasady_Projektu/PROFIL_STYLU.md) z fragmentów autora; nie wyrównuj wszystkich scen do jednego rytmu. Konflikt i stawkę wyprowadź z celów postaci. W trybie pełnym rozpisz [karty jednostek](assets/KARTA_JEDNOSTKI.md); w serii najpierw architekturę całości ([projektowanie serii](references/projektowanie-serii.md)), ale nie blokuj nią zamówionej próbki.
 
-## Planowanie i pisanie
-
-Jeśli autor od początku zamawia serię, przed zasadniczym pisaniem ustal architekturę wszystkich tomów: obietnicę, kierunek finału, historię świata, łuki, niezmienniki i zależności ujawnień. Szczegółowo rozpisz najbliższy tom, a odległe na tyle, by kontrolować zasiewy i rozwiązania. Nie blokuj zamówionej próbki koniecznością rozpisania całości. W istniejącej serii odtwórz stan napisany, zanim zaproponujesz przyszłość.
-
-Użyj [architektury serii](assets/szablon-projektu/07_Architektura_Serii/ARCHITEKTURA_SERII.md), [karty tomu](assets/szablon-projektu/07_Architektura_Serii/KARTA_TOMU.md) oraz [zasiewów i ujawnień](assets/szablon-projektu/07_Architektura_Serii/ZASIEWY_I_UJAWNIENIA.md). Każdy tom ma własne rozliczenie i zmianę uzasadniającą kolejny; nie resetuj relacji i konsekwencji między tomami.
-
-Przed pisaniem lub większą redakcją opracuj [profil stylu](assets/szablon-projektu/01_Zasady_Projektu/PROFIL_STYLU.md) z fragmentów autora. Oddziel stały głos, warianty postaci i scen oraz przypadkowe maniery. Mała próbka daje profil wstępny. Po zmianach porównaj nowe fragmenty ze wzorcem; nie wyrównuj wszystkich scen i bohaterów do jednego rytmu.
-
-Przy planowaniu powieści wyprowadź konflikt i stawkę z celów postaci. Zbuduj ciąg decyzji i konsekwencji, a następnie karty jednostek: perspektywa, czas i miejsce, cel, przeszkoda, zmiana, ujawnienie, warunek wejścia i stan końcowy. Oddziel zapowiedź od jej późniejszego rozwiązania. Sam wpis w planie nie ustanawia faktu w prozie.
-
-Przed kontynuacją przeczytaj poprzednią jednostkę z raportem, kartę bieżącej jednostki oraz źródłowe sceny potrzebne dla używanych faktów. Odtwórz stan wejściowy: wiedzę postaci, daty, miejsca, dokumenty, przedmioty, obrażenia i relacje. Nie czytaj automatycznie całej biblioteki przy każdej drobnej poprawce; dobierz zależności do zmiany i wskaż zakres lektury.
-
-Pisz jedną jednostkę i zatrzymaj się po jej dostarczeniu, chyba że bieżące polecenie lub obowiązujący zakres wyraźnie obejmuje więcej. Prolog, interludium i epilog są oddzielnymi jednostkami. Szersze zamówienie wykonaj do końca jego zakresu, zachowując odrębne pliki i aktualizacje stanu.
-
-Podczas pisania i redakcji korzystaj z [warsztatu i kontroli tekstu](references/warsztat-i-kontrola.md). Zachowaj głos książki oraz konsekwencje wcześniejszych działań. W książce faktograficznej oddziel twierdzenia źródłowe od interpretacji; nie fabularyzuj zdarzeń, cytatów ani biografii bez wyraźnego oznaczenia i właściwego zamówienia.
+Przed kontynuacją przeczytaj poprzednią jednostkę, jej raport, kartę i sceny źródłowe dla używanych faktów; odtwórz wiedzę, daty, miejsca, przedmioty, obrażenia, relacje i formy zwracania się. Pisz jedną jednostkę i zatrzymaj się, chyba że zamówiono więcej; prolog, interludium i epilog to osobne jednostki. W książce faktograficznej oddziel źródła od interpretacji i nie fabularyzuj bez oznaczenia.
 
 ## Redakcja i audyt
 
-Oceniaj immersję przez orientację, przyczynowość, sprawczość, dostęp do informacji i ciągłość emocjonalną. Nie utożsamiaj jej z nieustanną akcją ani katalogiem doznań. Korzystaj z [audytu stylu i immersji](assets/szablon-projektu/06_Kontrola/AUDYT_STYLU_I_IMMERSJI.md).
+Oceniaj funkcję i kumulację zabiegu, nie sam zwrot; limity autora egzekwuj licznikiem i lekturą. Stosuj najmniejszą skuteczną poprawkę, potem sprawdź zachowanie informacji, głosu i objętości. Korekta nie zmienia fabuły; poprawki fabularne w tekście autora są propozycjami, chyba że je zamówiono. Te cechy nie dowodzą autorstwa AI: żadnego „procentu AI”.
 
-Ograniczaj zbędne „po pierwsze/po drugie”, seryjne antytezy i trójki, abstrakcyjne puenty oraz wielokrotne tłumaczenie tych samych myśli. Oceniaj funkcję i kumulację, nie sam zwrot. Myśl zachowaj, gdy zmienia interpretację, decyzję lub napięcie. Wyliczenie w dokumencie, instrukcji lub dialogu analitycznej postaci może być uzasadnione. Nie przenoś norm prozy na raporty.
+Przy zmianie faktu znajdź zależności w późniejszych scenach i wcześniejszych tomach; nie zmieniaj po cichu przeszłości. Audyt podaje miejsce, źródło porównania, skutek i poprawkę, oddzielając błędy od hipotez. Jeśli możesz, zleć dodatkowy przegląd komuś, kto nie pisał tekstu; jeśli nie, zapisz to ograniczenie. Nierozstrzygnięta sprzeczność blokuje tylko zależne sceny.
 
-Stosuj najmniejszą skuteczną poprawkę w zamówionym zakresie, a potem sprawdź zachowanie informacji, głosu i związku między działaniami. Nie zastępuj refleksji losowymi gestami, rozwlekłości sloganami, a powtórzeń hurtową rotacją synonimów. Te cechy nie dowodzą autorstwa AI; nie podawaj „procentu AI” ani obietnic wobec detektorów.
+Narzędzia (Node.js 20+): `node scripts/ks.mjs sprawdz|tom|porownaj|styl|spacje|tiki|gestosc` (tylko odczyt) oraz `zamien` (zmienia tekst wyłącznie z `--zapisz --kopia`) ([kontrola techniczna](references/kontrola-techniczna.md)). Wynik narzędzia nie zastępuje lektury.
 
-Opcjonalny [skaner stylu](scripts/audyt-stylu.mjs) wskazuje zwroty, powtarzane pięciowyrazowe frazy i podstawowe miary. Przed użyciem przeczytaj [instrukcję skanera](references/skaner-stylu.md). Narzędzie nie zmienia plików; decyzje wymagają lektury.
+## Po każdej jednostce
 
-Dobierz ingerencję do zlecenia: korekta, redakcja językowa, przebudowa sceny lub analiza struktury to różne zakresy. Nie zmieniaj fabuły podczas samej korekty. Jeżeli autor autoryzował poprawki, wykonaj je; nie zastępuj zamówionej redakcji listą porad.
+1. Czysta proza w osobnym pliku.
+2. [Raport](assets/RAPORT_JEDNOSTKI.md): dziewięć punktów w trybie pełnym, trzy w lekkim.
+3. Kontrola techniczna i lektura całości; przy poprawce porównanie z poprzednią wersją.
+4. Aktualizacja [stanu](assets/STAN_KONTYNUACJI.md) faktami rzeczywiście zapisanymi; karta poprawiona tak, by opisywała napisany tekst.
+5. Lokalizacja plików, wynik kontroli, status „do akceptacji autora”, ograniczenia. Zatrzymanie na końcu zakresu.
 
-Przy zmianie faktu ustal zależności w późniejszych scenach i wcześniejszych tomach. Nowa decyzja autora może zmienić kanon; zapisz jej skutki oraz zakres wymaganych aktualizacji. Nie naprawiaj sprzeczności przez cichą zmianę przeszłości.
-
-Audyt przedstawia konkretne miejsca, źródło porównania, skutek błędu i propozycję korekty. Oddziel błędy potwierdzone od hipotez i pytań. Po końcu modułu lub tomu skontroluj całość tego zakresu i jego połączenie z wcześniejszym tekstem. Istotne nierozstrzygnięte sprzeczności zatrzymują dalsze pisanie zależnych scen; nie blokują niezależnych prac.
-
-## Zapis i przekazanie
-
-Zachowaj istniejący układ projektu. W nowym projekcie można użyć `outputs/` na teksty i raporty oraz `work/` na materiały pośrednie. Czysta proza, raport i stan mają oddzielne pliki. Przy poprawce oryginału utwórz wersję roboczą, chyba że autor polecił edytować istniejący plik.
-
-Po napisanej lub istotnie zmienionej jednostce:
-
-1. Zapisz czystą prozę bez komentarzy warsztatowych i znaczników do uzupełnienia.
-2. Sporządź osobny [raport dziewięciopunktowy](assets/RAPORT_JEDNOSTKI.md). Drobna korekta może mieć krótki zapis zmian zamiast pełnego raportu, jeśli projekt nie wymaga inaczej.
-3. Sprawdź ustalone minimum techniczne i przeczytaj całą nową jednostkę. Nie przedstawiaj skanera jako dowodu spójności lub jakości literackiej.
-4. Zaktualizuj [stan kontynuacji](assets/STAN_KONTYNUACJI.md) faktami rzeczywiście zapisanymi. Wskaż następny krok, zakres ukończenia i nierozstrzygnięte sprawy. Uzupełnij wykonane zasiewy i [rejestr wpływu zmian](assets/szablon-projektu/06_Kontrola/WALIDACJA_I_WPLYW_ZMIAN.md). Sprawdź połączenie z planem przyszłych tomów, bez traktowania tego planu jako napisanej prozy.
-5. Podaj lokalizację tekstu i raportu, wynik kontroli oraz ograniczenia. Zatrzymaj się na końcu zamówionego zakresu.
-
-Przy zmianie tekstu w jednym formacie odnotuj potrzebę aktualizacji pozostałych wydań. Zgodność Markdown nie potwierdza układu PDF, DOCX ani EPUB. Jeżeli zadanie obejmuje eksport, sprawdź wynik odpowiednimi dostępnymi narzędziami; w przeciwnym razie oznacz eksport jako niewykonany.
-
-Kolejność łączenia jednostek ustalaj z jawnego spisu tomu, uwzględniającego interludia i epilog; nie z dat plików lub samego sortowania nazw. Rejestruj wersję źródła każdego eksportu. Automatyzację eksportów wdrażaj w zakresie osobnego zamówienia zgodnie z [zasadami repozytorium](references/repozytorium-ksiazki.md); sam szkic drzewa folderów nie oznacza działającej automatyzacji.
-
-Tworzenie tekstu i lokalnego pakietu nie upoważnia do publikacji, wysyłki ani umieszczenia rękopisu w publicznym repozytorium. Zakres takiej operacji wynika z osobnego polecenia autora.
+Kolejność łączenia ustalaj ze spisu tomu, nie z nazw plików. Zmiana tekstu w jednym formacie oznacza nieaktualne pozostałe wydania. Przy przekazaniu pracy innemu modelowi przygotuj [pakiet](assets/PAKIET_PRZEKAZANIA.md) według [instrukcji](references/przekazanie-miedzy-modelami.md), a tekst, który wraca, sprawdź jak własny szkic. Utworzenie tekstu nie upoważnia do publikacji ani wysyłki.

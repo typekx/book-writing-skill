@@ -1,0 +1,24 @@
+{
+  "typografiaPolska": true,
+  "cyfryTylkoWKursywie": false,
+  "zakazNawiasowKwadratowych": true,
+  "minSlow": null,
+  "maxSlow": null,
+  "slowaWgTypu": {
+    "Prolog": { "min": null, "max": null },
+    "Rozdział": { "min": null, "max": null },
+    "Interludium": { "min": null, "max": null },
+    "Epilog": { "min": null, "max": null }
+  },
+  "minSlowTomu": null,
+  "maxSpadekSlowProc": 3,
+  "limity": [
+    { "nazwa": "przykład: zwrot zakazany przez autora", "fraza": "w pewnym sensie", "max": 0 },
+    { "nazwa": "przykład: tik z końcówkami odmiany", "fraza": "niejako*", "max": 2 },
+    { "wbudowany": "antyteza", "max": 1 },
+    { "wbudowany": "to-nie-bylo", "max": 0 },
+    { "wbudowany": "dwukropek-zapowiedz", "max": 1 },
+    { "wbudowany": "potrojna-anafora", "max": 0 }
+  ],
+  "zakazaneNazwy": []
+}
