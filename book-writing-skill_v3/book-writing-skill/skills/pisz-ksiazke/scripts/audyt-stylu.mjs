@@ -13,7 +13,7 @@ const RULES = [
 ];
 
 // Wyłącznie wybór zakresu analizy. Tekst wejściowy nigdy nie jest zapisywany.
-function proseLines(text) {
+export function proseLines(text) {
   const lines = text.replace(/^\uFEFF/, '').split(/\r?\n/);
   const result = [];
   let frontmatter = lines[0]?.trim() === '---';

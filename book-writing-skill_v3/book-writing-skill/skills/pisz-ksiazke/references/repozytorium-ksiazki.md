@@ -10,9 +10,9 @@ W nowym projekcie użyj [szablonu](../assets/szablon-projektu/README.md), jeśli
 
 | Rola | Proponowany folder | Zawartość |
 |---|---|---|
-| Reguły | `01_Zasady_Projektu/` | Profil, długości, struktura, narracja, zapis dialogów i nazw. |
+| Reguły | `01_Zasady_Projektu/` | Profil, hierarchia źródeł, długości, struktura, narracja, zapis dialogów i nazw, reguły kontroli technicznej. |
 | Postaci | `02_Bohaterowie/` | Karty, indeks postaci, relacje, konflikty i łuki rozwoju. |
-| Świat i źródła | `03_Lore_i_Notatki/` | Oś czasu, lokacje, research, dowody i rekwizyty. |
+| Świat i źródła | `03_Lore_i_Notatki/` | Oś czasu, lokacje, research, dowody, rekwizyty i katalog nazw. |
 | Proza | `04_Manuskrypt/` | Osobne tomy i jednostki oraz jawna kolejność ich składania. |
 | Wydania | `05_Eksporty/` | Wygenerowane MD, DOCX, PDF, EPUB oraz informacje o ich źródłach. |
 | Kontrola | `06_Kontrola/` | Aktualny stan, raporty jednostek, audyty i decyzje autora. |

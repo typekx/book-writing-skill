@@ -9,8 +9,10 @@ Stan otwieraj aktualnym podsumowaniem. Starsze wpisy mają osobną sekcję histo
 
 ## Rejestr decyzji
 
-| ID | Data i polecenie autora | Rozstrzygnięcie | Zakres zmiany | Dotknięte jednostki i rejestry | Status wdrożenia |
-|---|---|---|---|---|---|
+| ID | Data i polecenie autora | Pytanie i warianty | Rekomendacja | Rozstrzygnięcie | Zakres zmiany | Dotknięte jednostki i rejestry | Status |
+|---|---|---|---|---|---|---|---|
+
+Statusy: otwarta, rekomendacja, rozstrzygnięta, wdrożona w tekście. Jeden rejestr na projekt; równoległe wersje rozstrzygnięć oznacz jako archiwalne i wskaż obowiązującą.
 
 ## Indeks kontroli
 

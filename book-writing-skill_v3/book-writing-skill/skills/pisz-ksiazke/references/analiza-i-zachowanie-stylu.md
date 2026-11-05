@@ -38,3 +38,7 @@ Po poprawce przeczytaj akapit wraz z sąsiednimi. Skrót może usunąć ważne z
 Przechowuj wersję profilu i wskazania krótkich scen wzorcowych, nie tylko hasła „mrocznie, filmowo”. Na początku tomu określ cechy stałe i uzasadnione zmiany związane z narratorem lub rozwojem postaci. Autoryzowana ewolucja stylu nie jest błędem; zapisz jej zakres i moment przejścia.
 
 Nie twórz nowej normy na podstawie jednego zabiegu w pojedynczej scenie. Nie uśredniaj całej serii do parametrów jednego tomu.
+
+Przewodnik stylu ustalony przy redakcji tomu wygrywa z planem kolejnego tomu. Zapisz w nim znaki rozpoznawcze cyklu, konstrukcje do unikania z limitami, świadome wyjątki (motywy, refreny, głosy postaci) i krótką charakterystykę głosu każdej ważnej postaci: rejestr, długość zdań, czego unika, jak się zwraca do innych. Przy wątpliwości co do głosu postaci wygrywa jej najlepiej udana scena w kanonie; wskaż ją z numerem rozdziału.
+
+Przy pracy kilku modeli nad jedną serią porównuj nowe jednostki ze scenami wzorcowymi kanonu, nie z poprzednią wersją wygenerowaną przez inny model; dryf kumuluje się z każdym przekazaniem.

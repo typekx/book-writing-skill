@@ -8,7 +8,7 @@ Przy zamówieniu serii zaprojektuj jej architekturę przed zasadniczym pisaniem 
 - **Plan wykonawczy:** droga do tych punktów; sceny i decyzje mogą być zmieniane ze sprawdzeniem zależności.
 - **Otwarte warianty:** decyzje jeszcze niepodjęte. Wskaż, kiedy wybór staje się konieczny. Nie pisz zasiewu jako pewnika dla kilku sprzecznych rozwiązań naraz.
 
-W istniejącej serii fundamentem jest napisana proza. Odtworzenie jej zależności nie dowodzi, że późniejsze pomysły były zaplanowane od początku.
+W istniejącej serii fundamentem jest napisana proza. Odtworzenie jej zależności nie dowodzi, że późniejsze pomysły były zaplanowane od początku. Plan kontynuacji powstały z pamięci rozmowy porównaj z prozą i zapisz rejestr konfliktów planu z kanonem: co mówił plan, co mówi tekst, jak rozstrzygnięto, status (rozwiązane / pytanie do autora).
 
 ## Architektura całości
 
@@ -36,6 +36,29 @@ Rozpisz łuki serii na etapy w tomach. Zmiana ma bodziec, działanie, koszt i tr
 Prowadź [matrycę zasiewów i ujawnień](../assets/szablon-projektu/07_Architektura_Serii/ZASIEWY_I_UJAWNIENIA.md). Dla rozwiązania wskaż wymagane wcześniej fakty, przedmioty, umiejętności, relacje i zdarzenia. Nieistniejące źródło wiedzy jest brakującą zależnością, nie gotowym rozwiązaniem.
 
 Zaplanuj retrospekcje i zmiany perspektywy: kiedy czytelnik ma przewagę nad postacią i co wolno zasugerować bez przedwczesnego ujawnienia odpowiedzi. Wiedza zespołu autorskiego nie jest automatycznie wiedzą narratora danej sceny.
+
+## Identyfikatory i rejestry serii
+
+W długiej serii nazwane identyfikatory oszczędzają pomyłek w rozmowach, kartach i raportach. Przykładowe rodziny (dobierz do projektu):
+
+| Rodzina | Przykład | Treść |
+|---|---|---|
+| Decyzje autora | DEC-07 | pytanie, warianty, rozstrzygnięcie, data, skutki |
+| Zwroty akcji | ZW-04 | co się odwraca, w którym tomie i jednostce, przygotowanie |
+| Wątki tomu | WT-2-03 | wątek lokalny, otwarcie i domknięcie |
+| Dowody i dokumenty | DOW-015 | pochodzenie, oryginał i kopie, posiadacz, klasa wiarygodności |
+| Przemoc | PRZ-06 | scena, ofiara, skutek fizyczny, psychiczny i proceduralny |
+| Decyzje moralne | MOR-05 | wybór, koszt, alternatywa odrzucona |
+| Niezmienniki | NZ-03 | prawda serii, której nie wolno złamać (np. „bohater nigdy nie wraca do rodzinnego domu”) |
+| Bramki ujawnień | BU-07 | co musi się wydarzyć, zanim czytelnik lub postać może się dowiedzieć |
+
+Decyzje autora mają jeden rejestr ze statusem: otwarta, rekomendacja, rozstrzygnięta, wdrożona w tekście. Dwie wersje rozstrzygnięć tych samych pytań to błąd organizacji: autor wskazuje obowiązującą, druga trafia do archiwum.
+
+W kryminale lub thrillerze prowadź klasy wiarygodności dowodów (od plotki, przez relację i kopię, po dokument zabezpieczony procesowo). Postaci traktują dowód zgodnie z klasą: plotki nikt nie cytuje jako faktu, kopia nie zastępuje oryginału. Postać prowadząca dochodzenie może mieć stały zestaw pytań, które zadaje każdemu dokumentowi.
+
+## Stan po tomie
+
+Po zakończeniu tomu przygotuj krótki dokument „stan po tomie” dla piszącego kolejny: co napisano i ile słów, kalendarium, tabela wiedzy postaci i czytelnika, rekwizyty, formy zwracania się, ważne nowe fakty, wątki i zwroty wykonane i odłożone, liczniki serii, decyzje otwarte z rekomendacjami, lekcje z pisania. Nie zastępuje kanonu; przy wątpliwości obowiązuje proza.
 
 ## Plan szczegółowy i kontrola
 

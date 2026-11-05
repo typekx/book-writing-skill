@@ -6,7 +6,7 @@ Ten katalog jest szablonem do skopiowania do osobnego projektu książki. Uzupe�
 |---|---|---|
 | Zasady | [Zasady projektu](01_Zasady_Projektu/README.md) | Źródła, struktura, długość i styl. |
 | Postaci | [Indeks postaci](02_Bohaterowie/glowni_bohaterowie.md) | Karty, łuki rozwoju i relacje. |
-| Świat i notatki | [Oś czasu](03_Lore_i_Notatki/os_czasu.md) | Chronologię, lokacje, research i rekwizyty. |
+| Świat i notatki | [Oś czasu](03_Lore_i_Notatki/os_czasu.md) | Chronologię, lokacje, research, rekwizyty i [katalog nazw](03_Lore_i_Notatki/katalog_nazw.md). |
 | Rękopis | [Zasady rękopisu](04_Manuskrypt/README.md) | Tomy i kolejność jednostek. |
 | Eksporty | [Rejestr eksportów](05_Eksporty/README.md) | Wydania oraz wersje ich źródeł. |
 | Kontrola | [Stan i raporty](06_Kontrola/README.md) | Decyzje, raporty jednostek, audyty i stan kontynuacji. |

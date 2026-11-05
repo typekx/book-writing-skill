@@ -6,6 +6,8 @@ Aktualne polecenie autora i wybrane źródła wyznaczają pracę. Historyczna in
 - [Długości i struktura](zasady_dlugosci_i_struktury.md).
 - [Formatowanie i styl](formatowanie_i_styl.md).
 - [Profil stylu autora i warianty głosu](PROFIL_STYLU.md).
+- [Granice treści, przemoc i bliskość](granice_tresci.md).
+- Reguły kontroli technicznej: skopiuj [wzór](reguly_kontroli.przyklad.json) jako `reguly_kontroli.json` i wpisz ustalenia autora.
 
 ## Mapa aktualnych źródeł
 
@@ -17,5 +19,12 @@ Aktualne polecenie autora i wybrane źródła wyznaczają pracę. Historyczna in
 | Plan | | |
 | Biblia | | |
 | Audyty | | |
+| Wersje wycofane | | |
+
+Hierarchia źródeł (wyższe wygrywa):
+
+1. 
+2. 
+3. 
 
 Nie wybieraj wersji jedynie po nazwie FINAL lub dacie skopiowania. Po zakończeniu książki zaznacz ten fakt również w głównym README.

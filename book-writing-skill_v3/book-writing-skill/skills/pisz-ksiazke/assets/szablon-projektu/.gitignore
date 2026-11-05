@@ -1,0 +1,15 @@
+# Tymczasowe pliki edytorów
+~$*
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Lokalna konfiguracja Obsidiana; notatki Markdown pozostają wersjonowane
+.obsidian/
+
+# Dane lokalnego środowiska
+.env
+.env.*
+!.env.example

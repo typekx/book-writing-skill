@@ -16,7 +16,9 @@ Nie twórz pustych rozdziałów jako dowodu wykonania. W `KOLEJNOSC.md` wskazuj 
 
 Wzór spisu:
 
-| Kolejność | ID jednostki | Wybrany plik | Typ | Status | Czy włączyć do eksportu |
-|---|---|---|---|---|---|
+| Kolejność | ID jednostki | Wybrany plik | Typ | Data akcji | POV | Słowa | Status | Czy włączyć do eksportu |
+|---|---|---|---|---|---|---|---|---|
 
-Przed złożeniem sprawdź istnienie każdego wybranego pliku, brak duplikatów i zgodność statusu. Archiwalne warianty jednostki nie wchodzą do całości obok jej aktualnej wersji.
+Statusy: plan, do akceptacji, przyjęty, przyjęty z uwagami, do przepisania, wycofany. Kolejność pisania może różnić się od kolejności lektury (np. prolog pisany po rozdziale, który ustala jego szczegóły); zapisz taki wyjątek.
+
+Przed złożeniem sprawdź istnienie każdego wybranego pliku, brak duplikatów i zgodność statusu. Po złożeniu porównaj liczbę słów całości z sumą jednostek. Archiwalne warianty jednostki nie wchodzą do całości obok jej aktualnej wersji.

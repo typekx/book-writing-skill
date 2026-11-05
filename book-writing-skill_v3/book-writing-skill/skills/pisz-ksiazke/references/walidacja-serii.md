@@ -18,6 +18,26 @@ Rozróżniaj: propozycja, plan przyjęty, napisane, sprawdzone w określonym zak
 | Po module | Przejścia, przepływ informacji, tempo, powtarzane sytuacje i myśli, relacje i raporty. |
 | Po tomie | Lokalna obietnica, długi wobec czytelnika, zasiewy przyszłości, stan kolejnego tomu i zgodność wstecz. |
 
+## Klasy błędów ciągłości
+
+Te kategorie dają zwykle większość poprawek po napisaniu tomu. Sprawdzaj je celowo, wyszukiwaniem w całym zakresie, nie tylko lekturą:
+
+| Klasa | Jak szukać | Przykład |
+|---|---|---|
+| Odwołania względne do czasu | wypisz „wczoraj”, „tydzień temu”, „od soboty”, „od miesiąca”, „pierwszy od dwóch tygodni” i przelicz z kalendarza akcji | „tydzień temu”, choć minęło dwanaście dni |
+| Fakty powracające | wyszukaj każdy powtarzany szczegół (częstotliwość, adres, piętro, uraz i jego strona, położenie przedmiotu, kto zna hasło) | czynsz płacony „co miesiąc” w jednym rozdziale, „co tydzień” w innym |
+| Przeciek wiedzy | sceny, w których postać przywołuje szczegół znany tylko z prologu, interludium lub innej perspektywy | bohaterka cytuje list, który czytelnik widział tylko w prologu |
+| Niezamierzone echo | ten sam opis przypisany dwóm postaciom może sugerować, że to ta sama osoba | ten sam charakterystyczny zapach przy sąsiedzie i przy nieznanym sprawcy |
+| Podwójne miejsce | ta sama postać w dwóch miejscach o tej samej godzinie | postać na dworcu i w biurze o tej samej godzinie |
+| Pamięć postaci | czy postać pamięta to samo w różnych rozdziałach | raz nie pamięta rozmowy, później przytacza ją słowo w słowo |
+| Kto przyniósł, kto znalazł | autorstwo działań przy dowodach i dokumentach | dokument znalazła jedna postać, a później przypisuje się to drugiej |
+| Formy zwracania się | „ty”, „pan”, imię, język rozmowy | przejście na „ty” wcześniej niż w scenie, która je ustanawia |
+| Dzień tygodnia i wiek | kalendarz i oś czasu | dzień tygodnia niezgodny z datą |
+
+## Niezależny przegląd
+
+Piszący ma tendencję do czytania tego, co zamierzał napisać. Po module lub tomie zleć, jeśli to możliwe, przegląd osobnemu agentowi lub sesji, która nie widziała pisania i dostaje kanon, tekst i listę klas błędów. Świeże oko zwykle znajduje drobne sprzeczności, które przeoczyła samokontrola. Gdy takiej możliwości nie ma, wykonaj kontrolę skryptami i lekturą najbardziej ryzykownych miejsc (części pisanej najwcześniej, scen z wieloma faktami z poprzednich tomów) i zapisz to ograniczenie w raporcie.
+
 Po finale sprawdź rozwiązania wstecz: czy przygotowano przesłanki, czy nie zmieniono znaczenia faktu bez podstawy i czy nie urwano wątku przypadkiem. Świadoma otwartość jest dopuszczalna, gdy odpowiada obietnicy książki.
 
 ## Wpływ zmiany
